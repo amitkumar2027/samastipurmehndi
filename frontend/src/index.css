@@ -1,0 +1,436 @@
+/* =========================================
+   SAMASTIPUR MEHNDI - GLOBAL THEME
+   Luxury Indian Mehndi Aesthetic
+========================================= */
+
+:root {
+  /* Main Colors */
+  --bg-main: #fffaf3;
+  --bg-card: #ffffff;
+  --bg-subtle: #f5eee3;
+  --bg-green: #173f35;
+  --bg-green-light: #e8f0eb;
+
+  /* Brand Colors */
+  --primary-maroon: #7b1e2b;
+  --primary-hover: #9a2938;
+
+  --mehndi-green: #315c45;
+  --mehndi-green-dark: #173f35;
+  --mehndi-green-light: #527762;
+
+  --gold-accent: #c79a3b;
+  --gold-dark: #a77b25;
+  --gold-light: #ead7a4;
+
+  --terracotta: #a8432d;
+  --terracotta-light: #d87559;
+
+  /* Text */
+  --text-dark: #29221f;
+  --text-muted: #716660;
+  --text-light: #f8f3eb;
+
+  /* Borders */
+  --border-light: #e9ded0;
+  --border-gold: #d5ad5b;
+
+  /* Shadows */
+  --shadow-sm: 0 5px 18px rgba(70, 40, 20, 0.07);
+  --shadow-md: 0 10px 30px rgba(70, 40, 20, 0.11);
+  --shadow-lg: 0 18px 45px rgba(70, 40, 20, 0.16);
+
+  /* Fonts */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.brand-font {
+  font-family: var(--font-heading);
+  letter-spacing: 0.4px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--primary-maroon);
+}
+
+p {
+  color: var(--text-muted);
+}
+
+a {
+  color: inherit;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+  color: var(--primary-maroon);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.section-title p {
+  color: var(--mehndi-green);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+
+/* Decorative gold line */
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 3px;
+  margin: 18px auto 0;
+  background: linear-gradient(
+    90deg,
+    var(--gold-accent),
+    var(--terracotta),
+    var(--gold-accent)
+  );
+  border-radius: 10px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn-primary {
+  background: linear-gradient(
+    135deg,
+    var(--primary-maroon),
+    var(--terracotta)
+  );
+
+  color: #fff;
+
+  padding: 13px 30px;
+
+  border-radius: var(--radius-pill);
+
+  font-size: 0.95rem;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  display: inline-block;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+
+  border: 1px solid transparent;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px rgba(123, 30, 43, 0.18);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(
+    135deg,
+    var(--mehndi-green-dark),
+    var(--mehndi-green)
+  );
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 25px rgba(23, 63, 53, 0.22);
+}
+
+
+.btn-outline {
+  background: rgba(255, 250, 243, 0.7);
+
+  color: var(--primary-maroon);
+
+  border: 1.5px solid var(--primary-maroon);
+
+  padding: 12px 29px;
+
+  border-radius: var(--radius-pill);
+
+  font-size: 0.95rem;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  display: inline-block;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: var(--mehndi-green-dark);
+
+  border-color: var(--mehndi-green-dark);
+
+  color: #fff;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 22px rgba(23, 63, 53, 0.18);
+}
+
+
+/* =========================================
+   PREMIUM CARD
+========================================= */
+
+.card {
+  background: var(--bg-card);
+
+  border: 1px solid var(--border-light);
+
+  border-radius: var(--radius-md);
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+
+  border-color: var(--gold-light);
+
+  box-shadow: var(--shadow-md);
+}
+
+
+/* =========================================
+   GOLD ACCENT
+========================================= */
+
+.gold-text {
+  color: var(--gold-accent);
+}
+
+.green-text {
+  color: var(--mehndi-green);
+}
+
+.maroon-text {
+  color: var(--primary-maroon);
+}
+
+
+/* =========================================
+   SELECTION
+========================================= */
+
+::selection {
+  background: var(--mehndi-green);
+  color: #fff;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3eadf;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mehndi-green);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-maroon);
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+input,
+textarea,
+select {
+  font-family: var(--font-body);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+
+  border-color: var(--gold-accent) !important;
+
+  box-shadow:
+    0 0 0 3px rgba(199, 154, 59, 0.12);
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  animation:
+    fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1)
+    forwards;
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 92%;
+  }
+
+  .section-title {
+    margin-bottom: 2.2rem;
+  }
+
+  .section-title h2 {
+    font-size: 2.3rem;
+  }
+
+  .section-title p {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 11px 23px;
+    font-size: 0.9rem;
+  }
+}
