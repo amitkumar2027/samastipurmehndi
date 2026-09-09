@@ -6,28 +6,28 @@ const galleryItems = [
     title: "Royal Bridal Mehndi",
     category: "Bridal",
     image:
-      "https://images.unsplash.com/photo-1732118400647-a81e3b37be87?auto=format&fit=crop&w=1000&q=90",
+      "/peacock1.jpg",
   },
   {
     id: 2,
     title: "Elegant Bridal Henna",
     category: "Bridal",
     image:
-      "https://images.unsplash.com/photo-1674884060571-96a46a9a7a72?auto=format&fit=crop&w=1000&q=90",
+      "/hand.jpg",
   },
   {
     id: 3,
     title: "Traditional Indian Mehndi",
     category: "Bridal",
     image:
-      "https://images.unsplash.com/photo-1493728484672-f0bef543e2a1?auto=format&fit=crop&w=1000&q=90",
+      "/backhand1.jpg",
   },
   {
     id: 4,
     title: "Beautiful Back-Hand Mehndi",
     category: "Minimalist",
     image:
-      "https://images.unsplash.com/photo-1771992230505-97e0c3d38213?auto=format&fit=crop&w=1000&q=90",
+      "/backhand.jpg",
   },
   {
     id: 5,
@@ -57,6 +57,7 @@ const galleryItems = [
     image:
       "https://images.unsplash.com/photo-1525135927526-a01d9e5e9484?auto=format&fit=crop&w=1000&q=90",
   },
+  {
 ];
 
 const categories = [
