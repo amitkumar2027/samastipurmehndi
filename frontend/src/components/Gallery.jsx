@@ -57,7 +57,7 @@ const galleryItems = [
     image:
       "https://images.unsplash.com/photo-1525135927526-a01d9e5e9484?auto=format&fit=crop&w=1000&q=90",
   },
-  {
+
 ];
 
 const categories = [
